@@ -1,9 +1,10 @@
 === Easy PHP Settings ===
-Contributors: shahadul878
+Plugin Name: Easy PHP Settings
+Contributors: shahadul878,codereyes
 Tags: php settings, ini, performance, debug, wp-config
 Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 1.0.4
+Tested up to: 6.9
+Stable tag: 1.0.5
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -119,6 +120,26 @@ These switches directly control the debugging constants in your `wp-config.php` 
 4. The Debugging tab, with toggle switches for WordPress debugging constants.
 
 == Changelog ==
+  
+  = 1.0.5 =
+  Released: February 28, 2026
+  
+  * Version 1.0.5: Security, performance, and UX improvements%0A* Release version 1.0.5%0A* Release version 1.0.5%0A* Fix: Install SVN in GitHub Actions workflow
+  
+
+= 1.0.5 =
+* Enhanced: Improved wp-config.php editing security with proper parser and backup/restore functionality
+* Enhanced: Added comprehensive input validation for all PHP settings
+* Enhanced: Implemented caching layer for PHP info, extensions, and history using WordPress transients
+* Enhanced: Added pagination to history display for better performance
+* Enhanced: Improved error handling with structured logging and recovery mechanisms
+* Enhanced: Added real-time validation feedback in admin interface
+* Enhanced: Improved JavaScript with debouncing, loading states, and keyboard shortcuts
+* Enhanced: Added ARIA labels and improved accessibility throughout the plugin
+* Enhanced: Added file operation security with path validation and atomic writes
+* Fixed: Improved error messages and user feedback
+* Security: Enhanced file upload validation for import functionality
+* Security: Added backup before wp-config.php modifications with automatic rollback on failure
 
 = 1.0.4 =
 * Added: Quick Settings Presets - Choose from 5 optimization profiles (Default, Performance, WooCommerce, Development, Large Media). Each preset includes optimized values for core settings and custom php.ini directives.
