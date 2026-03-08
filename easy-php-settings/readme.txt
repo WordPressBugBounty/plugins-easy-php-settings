@@ -4,7 +4,7 @@ Contributors: shahadul878,codereyes
 Tags: php settings, ini, performance, debug, wp-config
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -114,18 +114,27 @@ These switches directly control the debugging constants in your `wp-config.php` 
 
 == Screenshots ==
 
-1. The General Settings tab where users can input their desired PHP values.
-2. The Configuration Generator, which provides code snippets for manual server configuration.
-3. The Status tab, showing live PHP values and server environment details.
-4. The Debugging tab, with toggle switches for WordPress debugging constants.
+1. General Settings — Configure PHP memory, upload limits, execution time, presets, and WordPress memory constants.
+2. Tools — Debugging toggles, log viewer, export/import settings, and reset options.
+3. PHP Settings — Full table of all PHP directives with search and copy functionality.
+4. Extensions — View all loaded PHP extensions by category with missing extension alerts.
+5. Status — Live comparison of current vs. recommended PHP and WordPress memory values.
+6. About — Plugin information, author details, and support links.
 
 == Changelog ==
   
-  = 1.1.0 =
-  Released: March 05, 2026
+  = 1.1.1 =
+  Released: March 08, 2026
   
-  * Release version 1.1.0: Modular architecture refactor%0A* Fix: SVN deploy handles filenames with spaces correctly%0A* Split deploy into two workflows: assets-only and full release
+  * update assets%0A* Update README.md%0A* Update README.md%0A* Release 1.2.0 - Plugin tracker integration and changelog%0A* Bump version to 1.1.1%0A* Merge remote-tracking branch 'origin/master'
   
+
+= 1.1.1 =
+Released: March 8, 2026
+
+* Added: Plugin usage tracker integration — optional anonymous install/activation reporting to improve plugin services (site URL, WordPress version, plugin version; no personally identifiable data in clear text)
+* Added: Admin notice explaining data collection with link to privacy details
+* Improved: Tracker integration runs on activation and sends version/site info for service updates
 
 = 1.1.0 =
 Released: March 5, 2026
@@ -196,6 +205,9 @@ Released: March 5, 2026
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+Adds optional plugin usage tracker for install/activation reporting. An admin notice explains what data is sent.
 
 = 1.0.0 =
 The first version of the plugin. No upgrade notice yet. 
