@@ -4,7 +4,7 @@ Contributors: shahadul878,codereyes
 Tags: php settings, ini, performance, debug, wp-config
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -123,11 +123,17 @@ These switches directly control the debugging constants in your `wp-config.php` 
 
 == Changelog ==
   
-  = 1.1.1 =
-  Released: March 08, 2026
+  = 1.1.2 =
+  Released: March 09, 2026
   
-  * update assets%0A* Update README.md%0A* Update README.md%0A* Release 1.2.0 - Plugin tracker integration and changelog%0A* Bump version to 1.1.1%0A* Merge remote-tracking branch 'origin/master'
+  * Release 1.1.2 - debugging switches and size validation
   
+
+= 1.1.2 =
+Released: March 8, 2026
+
+* Fixed: Debugging Constants switches not applying changes to wp-config.php due to outdated settings registration; now correctly updates WP_DEBUG, WP_DEBUG_LOG, WP_DEBUG_DISPLAY, and SCRIPT_DEBUG.
+* Changed: Removed hard 1G upper limit from size validators so larger values like 2G+ are accepted, relying on PHP/server limits and relationship checks instead.
 
 = 1.1.1 =
 Released: March 8, 2026
@@ -205,6 +211,9 @@ Released: March 5, 2026
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.2 =
+Fixes Debugging Constants switches so they correctly update wp-config.php and removes the old 1G cap on size values, allowing higher limits where supported.
 
 = 1.1.1 =
 Adds optional plugin usage tracker for install/activation reporting. An admin notice explains what data is sent.
